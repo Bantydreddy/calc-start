@@ -139,12 +139,20 @@ public class Calc extends JFrame implements ActionListener{
             }
         }
 
-        else if (text.equals("+") || equals("-") || equals("/") || equals("*")){
+        else if (text.matches("[/*+-]")){
+
+            switch(text){
+                case "/":
+                case "+":
+                case "-":
+                case "*":
+
             firstValue= Integer.parseInt(display.getText());
             operator=text;
             display.setText("");
             //display.setText(display.getText()+ text);
             //display.setText(display.getText() + operator);//I need to separate valeu from operator
+            }
         }
 
         else if (text.equals("=")){

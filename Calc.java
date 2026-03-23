@@ -156,6 +156,11 @@ public class Calc extends JFrame implements ActionListener{
         }
 
         else if (text.equals("=")){
+
+            //String[] parts= expression.split("[+*/-]");
+            //firstValue= Integer.parseInt(part[0]);
+            //secondValue= Integer.parseInt(part[1]);
+            
             secondValue= Integer.parseInt(display.getText());
             int result=0;
 

@@ -1,0 +1,3 @@
+# compiled Java files - never commit these
+*.class
+out/
